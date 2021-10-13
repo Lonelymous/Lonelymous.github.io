@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+    --basic-font-color:#000000;
+    --navbar-bg-color:#455A64;
+    --navbar-font-color:#000000;
+    --footer-bg-color:#455A64;
+    --footer-font-color:#000000;
+    --article-bg-color:#ffffff;
+    --article-font-color:#000000;
+    --menu-bg-color:#37474F;
+    --menu-font-color:#000000;
+    font-family: system-ui, sans-serif;
+    background-color: blue;
+}
+body {
+    margin: 0;
+    display: grid;
+    grid: 
+    'header header header header header header header header header header'
+    'main main main main main main main main main main'
+    'main main main main main main main main main main'
+    'main main main main main main main main main main'
+    'footer footer footer footer footer footer footer footer footer footer';
+}
+html body header{
+    grid-area: header;
+}
+html body header nav{
+    background-color: var(--navbar-bg-color)
+}
+html body header nav a{
+    background-color: transparent;
+}
+html body main{
+    
+    grid-area: main;
+    display: grid;
+    grid: 
+    'menu menu article article article article article article article article'
+}
+html body main nav{
+    grid-area: menu;
+    white-space: nowrap;
+    background-color: var(--menu-bg-color);
+}
+html body main nav ul{
+    margin-top: 1vh;
+    width: 16vw;
+    text-decoration: none;
+}
+html body main nav ul li a{
+    color: var(--basic-font-color)
+}
+html body main nav ul li a.current {
+    background: rgba(0, 0, 0, 0.10);
+  }
+html body main article{
+    margin-left: 1vw;
+    grid-area: article;
+    background-color: white;
+}
+html body main article section p{
+    margin-left: 1vw;
+}
+html body footer{
+    margin: 0;
+    padding: 0;
+    grid-area: footer;
+    background-color: var(--navbar-bg-color);
+    text-align: center;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+    html body main nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
