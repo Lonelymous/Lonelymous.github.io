@@ -47,7 +47,75 @@
 
       <article>
         
-        PARANCSOK
+        <div id="accordion">
+          <!-- Switch -->
+          <div class="card">
+            <div class="card-header" id="HeadSwitch">
+              <h5 class="mb-0">
+                <button class="btn" data-toggle="collapse" data-target="#Switch" aria-expanded="true" aria-controls="Switch">Switch</button>
+              </h5>
+            </div>
+        
+            <div id="Switch" class="collapse show" aria-labelledby="HeadSwitch" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card">
+                  <div class="card-header" id="HeadAlapok">
+                    <h5 class="mb-0">
+                      <button class="btn" data-toggle="collapse" data-target="#Alapok" aria-expanded="true" aria-controls="Alapok">
+                        Alapok
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="Alapok" class="collapse show" aria-labelledby="HeadAlapok" data-parent="#Switch">
+                    <div class="card-body">
+                      <ul>
+                        <li>Privilegázált exec módba belépés<br> enable | ena</li>
+                        <li>Konfigurációs módba való belépés <br> configure terminal | conf t</li>
+                        <li>Hostname beállítása <br> - Hostname (név)</li>
+                        <li>Hostname beállítása <br> - Hostname (név)</li>
+                        <li>Hostname beállítása <br> - Hostname (név)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card">
+            <div class="card-header" id="HeadRouter">
+              <h5 class="mb-0">
+                <button class="btn collapsed" data-toggle="collapse" data-target="#Router" aria-expanded="false" aria-controls="Router">
+                  Router
+                </button>
+              </h5>
+            </div>
+            <div id="Router" class="collapse" aria-labelledby="HeadRouter" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <div class="card-header" id="HeadServer">
+              <h5 class="mb-0">
+                <button class="btn collapsed" data-toggle="collapse" data-target="#Server" aria-expanded="false" aria-controls="Server">
+                  Server
+                </button>
+              </h5>
+            </div>
+            <div id="Server" class="collapse" aria-labelledby="HeadServer" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
 
       </article>
 
